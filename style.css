@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --cor:white;
+    --fonte:"sans-serif";
+    --cor_2:rgb(210, 126, 35);
+}
+
+/*Configurando a capa onde fica a 1º imagem de fundo */
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbb79c;
+}
+
+#capa{
+    width: 100%;
+    height: 100%;
+
+    background-color:aliceblue ;
+    background-image: url("fundo_mobile_4.png");
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#listas{
+    position: relative;
+    top: 50%;
+    margin-left: 10px;
+    height: 50%;
+    overflow: auto;
+}
+.produtos_listas{
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(254, 233, 191);
+    color: white;
+    font-family:sans-serif;
+    margin-bottom: 20px; 
+    transition: 2s ease;
+}
+
+.produtos_listas:hover{
+    background-image:linear-gradient(to left,rgb(235, 157, 0),rgb(199, 124, 2));
+    box-shadow:0 0 5px rgb(255, 166, 0);
+    border-color:rgb(255, 166, 0) ;
+    transition: background-image 2s ease;
+}
+
+/*Fim------------------------------------------------*/
+
+/*Temas e subtemas*/
+#info{
+    margin-top: 40%;
+}
+#tema,#subtema_,.tt{
+    color: var(--cor);
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: overline;
+}
+#subtema_{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#logo_img_tema{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/*Fim-------------------------------------------------*/
+
+/*sobre nós*/
+
+.textos{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 40px;
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+/*Fim-------------------------------------------------*/
+
+/*Botões*/
+
+#btn{
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+    border: solid 1px white;
+    background-color: transparent;
+    font-size: 1em;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Div dos ultimos lançamentos*/
+
+#ultimo_la{
+    margin-top: 80%;
+    line-height: 3em;
+}
+
+#img_destaque{
+
+    padding-left: 5px;
+    padding-top: 10%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor_2);
+    box-shadow: 0 0 80px var(--cor_2);
+    
+}
+
+div#vendo{
+    height: 70%;
+    padding-bottom: 2%;
+    background-color: var(--cor_2);
+    margin-bottom: 0;
+    padding-top: 50px;
+    border: solid 3px var(--cor_2);
+    box-shadow: 0 0 40px var(--cor_2);
+    
+    padding-bottom: 10vh;
+}
+#img_vendo{
+    display: inline-block;
+    height: 35%;
+    width: 70%;
+    border-radius: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url("prod_1.png");
+
+    background-position: center center;
+    background-size: 100% 100%;
+}
+#texto_vendo{
+    display: inline-block;
+    height: 100%;
+    width: 100%; 
+    z-index: 999999999;
+}
+
+
+
+
+.destaque_{
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 3;
+    
+    
+}
+
+#d1{
+    background-image: url("prod_1.png");
+}
+#d2{
+    background-image: url("prod_2.png");
+}
+#d3{
+    background-image: url("prod_3.png");
+}
+#d4{
+    background-image: url("prod_4.png");
+}
+#d5{
+    background-image: url("prod_5.png");
+}
+#d6{
+    background-image: url("prod_6.png");
+}
+.d_{
+    display: none;
+}
+
+
+
+/*Fim------------------------*/
+
+/*close e menu*/
+
+#menu{
+    display: none;
+    width: 5%;
+    height: 5%;
+    min-height: 50px;
+    min-width: 50px;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    z-index: 99999;
+}
+ #img_menu{
+    width: 100%;
+    height: 100%;
+ }
+ #mostra{
+    display: none;
+    backdrop-filter: blur(4px);
+    background-color: #fbb79c76;
+    width: 55%;
+    padding: 10px;
+    height: 100%;
+    position: fixed;
+    z-index: 9999999;
+    overflow-y: auto;
+}
+
+#close{
+    width: 30%;
+    margin-bottom: 10vh;
+}
+ .mostrou{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 5vh;
+    font-weight: bolder;
+    font-size: larger;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ .mostrou:hover{
+    background-image: linear-gradient(to left, rgb(255, 140, 0),rgb(240, 163, 75));
+    border-color: rgb(255, 140, 0);
+    box-shadow: 0 0 20px goldenrod;
+ }
+
+/*Estilos da maquiagem*/
+
+.maquis{
+    height: 35%;
+    width: 35%;
+    display: inline;
+}
+
+.maquis img{
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 60px 0 30px pink;
+}
+
+#img_1 img,#img_2 img{
+    float: right; 
+    box-shadow: -60px 0 30px pink;
+}
+
+/*fim-----------------*/
+
+/*Estilos de perfumes*/
+
+#perfume{
+    margin-top: 30vh;
+}
+#img_4 img,#img_6 img{
+    float: right; 
+    box-shadow: -60px 0 30px rgba(253, 172, 23, 0.151);
+}
+#img_5 img{
+    box-shadow: 60px 0 30px rgba(253, 172, 23, 0.147);
+}
+
+/*fim---------------*/
+
+/*Estilo de shampoo e gel*/
+
+#shampoo{
+    margin-top: 30vh;
+}
+
+#img_7 img,#img_9 img{
+    float: right; 
+    box-shadow: -60px 0 30px rgba(23, 215, 253, 0.079);
+}
+#img_8 img{
+    box-shadow: 60px 0 30px rgba(23, 215, 253, 0.079);;
+}
+
+/*Fim--------------------*/
+
+/*Dicas de beleza--------*/
+
+#dicas{
+    margin-top: 26vh;
+    padding: 5vh;
+    background-image: url("dicas.png");
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 0px 0px 10vh rgb(250, 75, 104);
+    border-radius: 10px;
+    background-attachment: fixed;
+}
+#dica{
+    color: white;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-family: sans-serif;
+    line-height: 1.5em;
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 1px white;
+    text-shadow: 0 0 1px black;
+    background-color: rgba(0, 0, 0, 0.118);
+}
+.tipos_dicas{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*Fim--------------------*/

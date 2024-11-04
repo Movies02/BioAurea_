@@ -1,0 +1,51 @@
+
+.tema_p{
+    margin-bottom: 20vh;
+}
+#prod_m,#prod_p,#prod_s{
+    position: relative;
+    top: 5vh;
+}
+.p_img{
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    display: inline;
+    margin-left: 10px;
+}
+
+.p_nome,.p_tipo,.p_preco{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.p_tipo{
+
+    display: block;
+}
+.p_preco{
+    display: block;
+    padding: 10px;
+    border-radius: 9px;
+    border: solid 1px white;
+    width: 60px;
+    
+    transition: background-color 1s ease-in;
+}
+
+.p_preco:hover{
+    background-color: rgb(252, 167, 55);
+    border-color:rgb(252, 167, 55) ;
+    transition: background-color 1.2s,border-color 1.2s;
+}
+
+
+.div_textos{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -40px;
+}

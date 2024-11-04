@@ -1,0 +1,142 @@
+[
+    {
+       "tipo":"gel",
+       "nome":"aguas_serenas",
+       "preco": 1250
+    },
+    {
+        "tipo":"gel",
+        "nome":"aura_zen",
+        "preco": 1800
+    },
+    {
+        "tipo":"shampoo",
+        "nome":"brisa_tropical",
+        "preco": 1550
+    },
+    {
+        "tipo":"gel",
+        "nome":"essência_de_jasmim",
+        "preco": 1120
+    },
+    {
+        "tipo":"shampoo",
+        "nome":"essência_do_amanhecer",
+        "preco": 1400
+    },
+    {
+        "tipo":"gel",
+        "nome":"girasol",
+        "preco": 1350
+    },
+    {
+        "tipo":"shampoo",
+        "nome":"nevoa",
+        "preco": 910
+    },
+    {
+        "tipo":"gel",
+        "nome":"orvalho",
+        "preco": 1020
+    },
+    {
+        "tipo":"gel",
+        "nome":"sperit",
+        "preco": 1650
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"aura_beauty",
+        "preco": 2100
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"rose",
+        "preco": 2700
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"velvet_touch",
+        "preco": 3400
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"rese_x2",
+        "preco": 2200
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"pure_radiance",
+        "preco": 3300
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"label",
+        "preco": 2500
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"glam_soul",
+        "preco": 3000
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"essenza",
+        "preco": 2800
+    },
+    {
+        "tipo":"maquiagem",
+        "nome":"bloom_skin",
+        "preco": 3200
+    },
+    {
+        "tipo":"perfume",
+        "nome":"soleil_d'or",
+        "preco": 2500
+    },
+    {
+        "tipo":"perfume",
+        "nome":"pureza_cristal",
+        "preco": 3600
+    },
+    {
+        "tipo":"perfume",
+        "nome":"nevoa",
+        "preco": 1900
+    },
+    {
+        "tipo":"perfume",
+        "nome":"flora_bella",
+        "preco": 2100
+    },
+    {
+        "tipo":"perfume",
+        "nome":"eterno",
+        "preco": 3200
+    },
+    {
+        "tipo":"perfume",
+        "nome":"essência_real",
+        "preco": 2900
+    },
+    {
+        "tipo":"perfume",
+        "nome":"encanto_secreto",
+        "preco": 1750
+    },
+    {
+        "tipo":"perfume",
+        "nome":"doux_rêve",
+        "preco": 2300
+    },
+    {
+        "tipo":"perfume",
+        "nome":"amor_fino",
+        "preco": 3800
+    },
+    {
+        "tipo":"perfume",
+        "nome":"alma_do_oriente",
+        "preco": 1600
+    }
+]

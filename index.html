@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioAurea</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_js.css">
+    <link rel="stylesheet" href="style_produto.css">
+    <link rel="stylesheet" href="style_js_produtos.css">
+</head>
+<body>
+
+    <div id="mostra">
+        <img src="close.png" alt="" id="close">
+        <ul id="mostra_2"type="none">
+            <li class="mostrou" id="manda_m" onclick="mandar('maquiagem')">Maquiagem</li>
+            <li class="mostrou" id="manda_d" onclick="mandar('dicas')">Dicas de Beleza</li>
+            <li class="mostrou" id="manda_p" onclick="mandar('perfume')">Perfumes</li>
+            <li class="mostrou" id="manda_g" onclick="mandar('shampoo')">Gel</li>
+
+        </ul>    
+    </div>
+    <div id="capa">
+        <ul id="listas" type="none">
+            <div class="separada">
+                <li class="produtos_listas" id="manda_m2" onclick="mandar('maquiagem')">Maquiagem</li>
+            </div>
+            <div class="separada">
+                <li class="produtos_listas" id="manda_d2" onclick="mandar('dicas')">Dicas de Beleza</li>
+            </div>
+            <div class="separada">
+                <li class="produtos_listas" id="manda_p2" onclick="mandar('perfume')">Perfumes</li>
+            </div>
+            <div class="separada">
+                <li class="produtos_listas" id="manda_g2" onclick="mandar('shampoo')">Gel</li>
+            </div>
+        </ul>
+            
+        <div id="menu">
+            <img src="menu.png" alt="" id="img_menu">
+        </div>
+    </div>
+    <div id="info">
+        <img src="logo.png" alt="img" id="logo_img_tema">
+        <h1 id="tema" class="tt">BioAurea</h1>
+        <p id="sobre_nos" class="textos">
+            Já pensou em cuidar da sua pele com produtos verdadeiramente naturais? Na BioAurea, acreditamos que sua beleza merece o melhor — direto da natureza para você! Nossos cosméticos são feitos com ingredientes puros e sustentáveis, cuidadosamente selecionados para trazer resultados reais e seguros.
+        </p>
+        <button id="btn">Veja mais</button>
+
+        <div id="ultimo_la">
+            <h1 id="ultimo_" class="tt">Ultimos Lançamentos</h1>
+        </div>
+    </div>
+    <div id="vendo">
+        <div id="img_vendo">
+
+        </div>
+        <div id="texto_vendo">
+            <h1 class='nome'>Sublime</h1>
+            <div id="text">
+                <p class='texto_js'>Lançado em 10/5/2024, Sublime hidrata os lábios com manteiga de karité e óleo de coco, oferecendo textura leve e aroma delicado para lábios radiantes e protegidos. Experimente para um brilho irresistível!</p>
+            </div>
+        </div>
+    </div>
+    <div id="img_destaque">
+
+        <div class="destaque_" id="d1" onclick="escolha('d1_')">
+            <img src="prod_1.png" alt="" class="d_" id="d1_">
+        </div>
+        <div class="destaque_" id="d2" onclick="escolha('d2_')">
+            <img src="prod_2.png" alt="" class="d_" id="d2_">
+        </div>
+        <div class="destaque_" id="d3" onclick="escolha('d3_')">
+            <img src="prod_3.png" alt="" class="d_" id="d3_">
+        </div>
+        <div class="destaque_" id="d4" onclick="escolha('d4_')">
+            <img src="prod_4.png" alt="" class="d_" id="d4_">
+        </div>
+        <div class="destaque_" id="d5" onclick="escolha('d5_')">
+            <img src="prod_5.png" alt="" class="d_" id="d5_">
+        </div>
+        <div class="destaque_" id="d6" onclick="escolha('d6_')">
+            <img src="prod_6.png" alt="" class="d_" id="d6_">
+        </div>
+    </div>
+
+    <div id="produtos">
+        <div id="maquiagem">
+            <h1 id="tema_M" class="tema_p">
+                Maquiagem
+            </h1>
+            <div id="img_1" class="maquis">
+                <img src="maqui_1.png" alt="">
+            </div>
+            <div id="img_3" class="maquis">
+                <img src="maqui_3.png" alt="">
+            </div>
+            <div id="img_2" class="maquis">
+                <img src="maqui_2.png" alt="">
+            </div>
+
+            <div id="prod_m">
+                
+            </div>
+        </div>
+        <div id="perfume">
+            <h1 id="tema_P" class="tema_p">Perfumes</h1>
+            <div id="img_4" class="maquis">
+                <img src="img_per_1.png" alt="">
+            </div>
+            <div id="img_5" class="maquis">
+                <img src="img_per_2.png" alt="">
+            </div>
+            <div id="img_6" class="maquis">
+                <img src="img_per_3.png" alt="">
+            </div>
+            <div id="prod_p">
+
+            </div>
+        </div>
+
+        <div id="shampoo">
+            <h1 id="tema_s" class="tema_p">Gel & Shampoo</h1>
+            <div id="img_7" class="maquis">
+                <img src="img_sh_1.png" alt="">
+            </div>
+            <div id="img_8" class="maquis">
+                <img src="img_sh_2.png" alt="">
+            </div>
+            <div id="img_9" class="maquis">
+                <img src="img_sh_3.png" alt="">
+            </div>
+            <div id="prod_s">
+
+            </div>
+        </div>
+        <div id="dicas">
+            <h1 id="tema_d" class="tema_p">Dicas de Beleza</h1>
+            <p id="dica">
+                🌟 Descubra sua Beleza com Nossos Produtos! 🌟
+
+                Transforme sua rotina de beleza com nossa linha incrível de produtos que realçam seu brilho natural! <br>
+
+                ✨ <a href="" class="tipos_dicas">Gel Aguas Serenas</a> (R$ 1250): Hidratação refrescante para começar o dia. <br>
+                ✨ <a href="" class="tipos_dicas">Gel Aura Zen</a> (R$ 1800): Um toque equilibrante que deixa a pele leve. <br>
+                ✨ <a href="" class="tipos_dicas">Essência de Jasmim</a> (R$ 1120): Propriedades calmantes para harmonia na pele. <br>
+                ✨ <a href="" class="tipos_dicas">Maquiagem Aura Beauty</a> (R$ 2100): Realce seus traços com um toque natural. <br>
+                ✨ <a href="" class="tipos_dicas">Perfume Soleil D'Or</a> (R$ 2500): Um aroma elegante que marca sua presença. <br>
+                ✨ <a href="" class="tipos_dicas">Maquiagem Velvet Touch</a> (R$ 3400): Para uma pele aveludada e perfeita. <br>
+                ✨ <a href="" class="tipos_dicas">Perfume Amor Fino</a> (R$ 3800): Uma fragrância apaixonante e sublime. <br> <br>
+
+                🌸 <a href="" class="tipos_dicas">Dica:</a> Combine a Essência de Jasmim antes da maquiagem e finalize com o Perfume Soleil D'Or para um brilho inesquecível!
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="script_rolagem.js"></script>
+    <script src="script_destaque.js"></script>
+    <script src="script_menu.js"></script>
+    <script src="script_conector.js"></script>
+    <script src="script_listas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.nome{
+    color: antiquewhite;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.texto_js{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    line-height: 1.6em;
+}
+
+#vendo{
+    margin-bottom: 40vh;
+    margin-top: 30vh;
+}

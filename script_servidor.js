@@ -37,7 +37,7 @@ app.get('/dados',(req,res)=>{
     })
 })
 
-var porta=8000
+const porta = process.env.PORT || 3000
 app.listen(porta,err=>{
     if(err){
         console.error('Erro na conexão\n'+err)

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',async function(){
-    var response=await fetch('http://localhost:8000/dados')
+    var response=await fetch('http://localhost:3000/dados')
     var res=await response.json()
     var prod_m=document.getElementById('prod_m')
     var prod_p=document.getElementById('prod_p')

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',async function(){
-    var response=await fetch('https://bioaurea.vercel.app/dados')
+    var response=await fetch('https://bioaurea-basketballs-projects.vercel.app/dados')
     var res=await response.json()
     var prod_m=document.getElementById('prod_m')
     var prod_p=document.getElementById('prod_p')

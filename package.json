@@ -1,15 +1,18 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "helmet": "^8.0.0",
-    "morgan": "^1.10.0"
-  },
-  "engines": {
-    "node":"14.x"
-  },
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Servidor para fornecer dados de produtos",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  }
-  
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "Janilson Monteiro",
+  "license": "ISC"
 }

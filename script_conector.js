@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',async function(){
     var prod_p=document.getElementById('prod_p')
     var prod_g=document.getElementById('prod_s')
     var jsond=res
-    var letra=Number(jsond.length)-1
+    var letra=Number(String(jsond).length)-1
     console.log(letra)
 
     while(letra>0){

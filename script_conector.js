@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',async function(){
     var response=await fetch('https://bioaurea.vercel.app/dados')
     if(response.ok){
         var res=await response.json()
+        console.log("deu certo")
         return
     }
     var prod_m=document.getElementById('prod_m')

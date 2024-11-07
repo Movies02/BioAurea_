@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded',async function(){
     var jsond=res
     var letra_=Number(String(jsond).length)-1
     console.log(letra_)
+    console.log(jsond)
     var letra=Number(letra_)
 
     while(letra>0){

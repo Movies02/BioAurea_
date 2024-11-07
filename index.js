@@ -1,12 +1,12 @@
-var express=require('express')
-var helmet=require('helmet')
-var cors=require("cors")
-var fs=require('fs')
+// index.js
+const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
+const fs = require('fs');
 
-var app=express()
-app.use(express.json())
-app.use(cors())
-
+const app = express();
+app.use(express.json());
+app.use(cors());
 
 app.use(helmet.contentSecurityPolicy({
     directives: {
@@ -15,33 +15,30 @@ app.use(helmet.contentSecurityPolicy({
         scriptSrc: ["'self'", 'https:']
     }
 }));
-
 app.use(helmet.crossOriginEmbedderPolicy());
 app.use(helmet.crossOriginOpenerPolicy());
 app.use(helmet.crossOriginResourcePolicy({ policy: "same-origin" }));
 app.use(helmet.dnsPrefetchControl({ allow: false }));
-// Removido o helmet.expectCt
-app.use(helmet.frameguard({ action: 'deny' })); // Impede o carregamento em iframe
-app.use(helmet.hsts({ maxAge: 31536000, includeSubDomains: true })); // Força HTTPS
-app.use(helmet.xssFilter()); // Ativa o filtro XSS
+app.use(helmet.frameguard({ action: 'deny' }));
+app.use(helmet.hsts({ maxAge: 31536000, includeSubDomains: true }));
+app.use(helmet.xssFilter());
 
-app.get('/dados',(req,res)=>{
-    fs.readFile('produtos.json',"utf-8",(err,data)=>{
-        if(err){
-            console.error('Tivermos um pequeno erro na conexão, veja:\n'+err)
-            return
+// Rota para a raiz
+app.get('/', (req, res) => {
+    res.send('Bem-vindo à API! Acesse /dados para ver os dados.');
+});
+
+app.get('/dados', (req, res) => {
+    fs.readFile('produtos.json', "utf-8", (err, data) => {
+        if (err) {
+            console.error('Erro na conexão, veja:\n' + err);
+            res.status(500).json({ error: 'Erro ao ler o arquivo' });
+            return;
         }
-        var obj=JSON.parse(data)
-        console.log(obj)
-        res.json(obj)
-    })
-})
+        const obj = JSON.parse(data);
+        console.log(obj);
+        res.json(obj);
+    });
+});
 
-const porta = process.env.PORT || 3000
-app.listen(porta,err=>{
-    if(err){
-        console.error('Erro na conexão\n'+err)
-        return
-    }
-    console.log("Servidor rodando na porta "+porta)
-})
+module.exports = app;

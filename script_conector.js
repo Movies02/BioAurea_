@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded',async function(){
     var prod_p=document.getElementById('prod_p')
     var prod_g=document.getElementById('prod_s')
     var jsond=res
-    var letra=Number(String(jsond).length)-1
-    console.log(letra)
+    var letra_=Number(String(jsond).length)-1
+    console.log(letra_)
+    var letra=Number(letra_)
 
     while(letra>0){
         var data=jsond[letra]

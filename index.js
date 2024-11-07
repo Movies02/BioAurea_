@@ -16,7 +16,7 @@ app.use(helmet.contentSecurityPolicy({
         mediaSrc: ["'self'", 'data:']
     }
 }));
-app.use(helmet.crossOriginEmbedderPolicy());
+//app.use(helmet.crossOriginEmbedderPolicy());
 app.use(helmet.crossOriginOpenerPolicy());
 app.use(helmet.crossOriginResourcePolicy({ policy: "same-origin" }));
 app.use(helmet.dnsPrefetchControl({ allow: false }));

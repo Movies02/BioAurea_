@@ -1,5 +1,8 @@
 {
-  "rewrites": [
-    { "source": "(.*)", "destination": "index.js" }
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/dados", "dest": "/index.js" }
   ]
 }

@@ -1,24 +1,29 @@
-// index.js
-const express = require('express');
-const cors = require('cors');
-const fs = require('fs');
+var express=require('express')
+var cors=require("cors")
+var fs=require('fs')
 
-const app = express();
-app.use(express.json());
-app.use(cors());
+var app=express()
+app.use(express.json())
+app.use(cors())
 
-app.get('/dados', (req, res) => {
-    fs.readFile('produtos.json', "utf-8", (err, data) => {
-        if (err) {
-            console.error('Tivemos um pequeno erro na conexão, veja:\n' + err);
-            res.status(500).json({ error: 'Erro ao ler o arquivo' });
-            return;
+
+app.get('/dados',(req,res)=>{
+    fs.readFile('produtos.json',"utf-8",(err,data)=>{
+        if(err){
+            console.error('Tivermos um pequeno erro na conexão, veja:\n'+err)
+            return
         }
-        const obj = JSON.parse(data);
-        console.log(obj);
-        res.json(obj);
-    });
-});
+        var obj=JSON.parse(data)
+        console.log(obj)
+        res.json(obj)
+    })
+})
 
-// Exporta a função handler que será usada como endpoint na API do Vercel
-module.exports = app;
+const porta = process.env.PORT || 3000
+app.listen(porta,err=>{
+    if(err){
+        console.error('Erro na conexão\n'+err)
+        return
+    }
+    console.log("Servidor rodando na porta "+porta)
+})

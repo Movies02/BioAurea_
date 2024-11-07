@@ -12,7 +12,8 @@ app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],
         styleSrc: ["'self'", 'https:'],
-        scriptSrc: ["'self'", 'https:']
+        scriptSrc: ["'self'", 'https:'],
+        mediaSrc: ["'self'", 'data:']
     }
 }));
 app.use(helmet.crossOriginEmbedderPolicy());
@@ -22,6 +23,7 @@ app.use(helmet.dnsPrefetchControl({ allow: false }));
 app.use(helmet.frameguard({ action: 'deny' }));
 app.use(helmet.hsts({ maxAge: 31536000, includeSubDomains: true }));
 app.use(helmet.xssFilter());
+
 
 // Rota para a raiz
 app.get('/', (req, res) => {

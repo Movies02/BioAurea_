@@ -12,7 +12,7 @@ app.use(helmet.contentSecurityPolicy({
     directives: {
         defaultSrc: ["'self'"],
         styleSrc: ["'self'", 'https:'],
-        scriptSrc: ["'self'", 'https:']
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "*"]
     }
 }));
 app.use(helmet.crossOriginEmbedderPolicy());

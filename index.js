@@ -10,9 +10,10 @@ app.use(cors());
 
 app.use(helmet.contentSecurityPolicy({
     directives: {
-        defaultSrc: ["'self'"],
-        styleSrc: ["'self'", 'https:'],
-        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "*"]
+        defaultSrc: ["'self'", "*"],  // Permite carregar recursos de qualquer origem
+        styleSrc: ["'self'", 'https:', "'unsafe-inline'"], // Permite estilos inline e externos
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "*"], // Permite qualquer script
+        mediaSrc: ["'self'", 'data:']
     }
 }));
 app.use(helmet.crossOriginEmbedderPolicy());

@@ -20,10 +20,4 @@ app.get('/dados',(req,res)=>{
 })
 
 const porta = process.env.PORT || 3000
-app.listen(porta,err=>{
-    if(err){
-        console.error('Erro na conexão\n'+err)
-        return
-    }
-    console.log("Servidor rodando na porta "+porta)
-})
+module.exports = app
